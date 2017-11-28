@@ -1,0 +1,9 @@
+version: '2'
+services:
+  web:
+    image: rips_web
+    build: .
+    ports: 
+      - "2772:80"
+    volumes: 
+      - ./../src:/var/www/site
